@@ -1,16 +1,19 @@
 "use strict";
 
-// create an array of objects that use the following schema: {item: string, cost: number, quantity: number}
-const groceries = [];
-// tax rate as a constant
-const TAX_RATE = 0.07;
+const groceries = [
+  { item: "eggs", cost: 5.4, quantity: 1 },
+  { item: "cabbage", cost: 2.5, quantity: 2 },
+  { item: "chicken (whole)", cost: 15.0, quantity: 1 },
+  { item: "avocado", cost: 4, quantity: 5 },
+];
 
-// create a varable for the subtotal
+const TAX_RATE = 0.07;
+let subtotal = 0;
 
 // loop through the groceries
 // calculate the amount for each item
 // add the value to the subtotal
 
-// calculate the total
+const total = subtotal * (1 + TAX_RATE);
 
 // log the subtotal as well as the total to the console. but only display the values to 2 decimal points
