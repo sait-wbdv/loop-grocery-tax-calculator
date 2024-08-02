@@ -10,10 +10,10 @@ const groceries = [
 const TAX_RATE = 0.07;
 let subtotal = 0;
 
-// loop through the groceries
-// calculate the amount for each item
-// add the value to the subtotal
-
+for (const item of groceries) {
+  subtotal += item.cost * item.quantity;
+}
 const total = subtotal * (1 + TAX_RATE);
 
-// log the subtotal as well as the total to the console. but only display the values to 2 decimal points
+console.log(subtotal.toFixed(2));
+console.log(total.toFixed(2));
